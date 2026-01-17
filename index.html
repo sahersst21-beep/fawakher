@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فواخير زهران | Fawakher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0b0b0b;
+  --dark:#141414;
+  --gold:#c8a951;
+  --text:#f5f5f5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  background:var(--black);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  align-items:center;
+  padding:0 6%;
+  background:
+    radial-gradient(circle at bottom left,rgba(200,169,81,.15),transparent 45%),
+    linear-gradient(#000,#111);
+  overflow:hidden;
+}
+
+/* النص */
+.hero-content h1{
+  font-size:52px;
+  margin:0 0 15px;
+}
+.hero-content span{
+  color:var(--gold);
+}
+.hero-content p{
+  font-size:18px;
+  line-height:1.9;
+  max-width:600px;
+  margin-bottom:25px;
+}
+.hero-content .btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:var(--gold);
+  color:#000;
+  font-weight:800;
+  border-radius:35px;
+}
+
+/* صورة البوت */
+.hero-visual{
+  text-align:center;
+}
+.hero-visual img{
+  max-height:85vh;
+  width:auto;
+  filter:drop-shadow(0 45px 45px rgba(0,0,0,.65));
+}
+
+/* أرضية خفيفة */
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:120px;
+  background:linear-gradient(to top,rgba(200,169,81,.12),transparent);
+}
+
+/* ================= FEATURES ================= */
+.features{
+  background:var(--dark);
+  padding:90px 0;
+}
+.features h2{
+  text-align:center;
+  margin-bottom:50px;
+}
+.feature-grid{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.feature{
+  background:#0f0f0f;
+  border:1px solid rgba(200,169,81,.35);
+  padding:28px;
+  border-radius:20px;
+}
+.feature h3{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+/* ================= GALLERY ================= */
+.gallery{
+  padding:90px 0;
+}
+.gallery h2{text-align:center;margin-bottom:40px}
+.gallery-grid{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.gallery-grid img{
+  width:100%;
+  border-radius:22px;
+  border:2px solid rgba(200,169,81,.25);
+}
+
+/* ================= CTA ================= */
+.cta{
+  padding:90px 0;
+  background:linear-gradient(#000,#111);
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  margin:10px;
+  padding:14px 30px;
+  border-radius:35px;
+  font-weight:800;
+}
+.call{background:var(--gold);color:#000}
+.whatsapp{border:2px solid var(--gold);color:var(--gold)}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#000;
+  padding:25px 0;
+  text-align:center;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding-top:90px;
+  }
+  .hero-content h1{font-size:38px}
+  .hero-visual img{
+    max-height:420px;
+    margin-top:35px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>فواخير <span>زهران</span></h1>
+    <p>
+      بوتات وقصارى وإناء زرع فايبر جلاس  
+      بأعلى جودة وأشيك تصميم  
+      مهما كان بتسميه… عندنا هتلاقيه 🌿
+    </p>
+    <a href="#contact" class="btn">اطلب الآن</a>
+  </div>
+
+  <div class="hero-visual">
+    <img src="images/hero-pot.png" alt="بوت فايبر جلاس فواخير زهران">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>🪴 ليه تختار فواخير زهران؟</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>فايبر جلاس قوي</h3>
+      <p>خفيف – متين – مش بيتكسر</p>
+    </div>
+    <div class="feature">
+      <h3>دهانات دوكو فاخرة</h3>
+      <p>ألوان ثابتة وشكل شيك</p>
+    </div>
+    <div class="feature">
+      <h3>Indoor & Outdoor</h3>
+      <p>يناسب كل الاستخدامات</p>
+    </div>
+    <div class="feature">
+      <h3>اختيار حر</h3>
+      <p>لون – شكل – مقاس حسب ذوقك</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>✨ بعض من أعمالنا</h2>
+  <div class="gallery-grid">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <h2>📞 تواصل معنا الآن</h2>
+  <a href="tel:01128546060" class="call">اتصال مباشر</a>
+  <a href="https://wa.me/201128546060" class="whatsapp">واتساب</a>
+</section>
+
+<footer>
+  © فواخير زهران – Fawakher | 011 28546060
+</footer>
+
+</body>
+</html>
